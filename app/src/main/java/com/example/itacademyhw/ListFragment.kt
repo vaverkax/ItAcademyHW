@@ -78,7 +78,7 @@ class ListFragment : Fragment() {
             recyclerView.addOnScrollListener(object: RecyclerView.OnScrollListener() {
                 override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
                     super.onScrollStateChanged(recyclerView, newState)
-                    val totalItemCount = recyclerView.layoutManager!!.itemCount
+                    val totalItemCount = recyclerView.layoutManager?.itemCount ?: 0
                     println("$lastVisibleItemPosition $totalItemCount")
                     if (lastVisibleItemPosition >= ((totalItemCount - 1) / 2) && !isLoading) {
                         loadBeers(currentPage + 1)
