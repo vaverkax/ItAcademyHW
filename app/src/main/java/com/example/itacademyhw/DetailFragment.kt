@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import androidx.navigation.ui.setupWithNavController
 import com.example.itacademyhw.databinding.FragmentDetailBinding
 
@@ -16,12 +17,7 @@ class DetailFragment : Fragment() {
         "View was destroyed"
     }
 
-    private val beerName: String by lazy(LazyThreadSafetyMode.NONE) {
-        requireArguments().getString("beerName", "")
-    }
-    private val description: String by lazy(LazyThreadSafetyMode.NONE) {
-        requireArguments().getString("description", "")
-    }
+    val args: DetailFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,10 +38,10 @@ class DetailFragment : Fragment() {
                 .setupWithNavController(findNavController())
 
             descriptionTextView
-                .text = description
+                .text = args.description
 
             titleText
-                .text = beerName
+                .text = args.beerName
         }
     }
 
