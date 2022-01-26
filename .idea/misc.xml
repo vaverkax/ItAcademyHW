@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/fragment_edit.xml" value="0.17664670658682635" />
-        <entry key="app/src/main/res/layout/user_item.xml" value="0.30978260869565216" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_container.xml" value="0.171875" />
+        <entry key="app/src/main/res/layout/fragment_edit.xml" value="0.171875" />
+        <entry key="app/src/main/res/layout/fragment_table.xml" value="0.171875" />
+        <entry key="app/src/main/res/layout/user_item.xml" value="0.171875" />
       </map>
     </option>
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

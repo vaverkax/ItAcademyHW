@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ItAcademyHW</string>
+    <string name="first_name_placeholder">First name</string>
+    <string name="last_name_placeholder">Last name</string>
+    <string name="add_btn_title">Add</string>
 </resources>
