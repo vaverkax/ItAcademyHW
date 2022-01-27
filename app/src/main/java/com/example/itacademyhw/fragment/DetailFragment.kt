@@ -1,4 +1,4 @@
-package com.example.itacademyhw
+package com.example.itacademyhw.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -17,7 +17,7 @@ class DetailFragment : Fragment() {
         "View was destroyed"
     }
 
-    val args: DetailFragmentArgs by navArgs()
+    private val args: DetailFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater,
