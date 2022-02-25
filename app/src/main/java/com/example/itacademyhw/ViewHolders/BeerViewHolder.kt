@@ -4,17 +4,18 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.itacademyhw.databinding.BeerItemBinding
-import com.example.itacademyhw.fragment.ListFragmentDirections
-import com.example.itacademyhw.model.BeerData
+import com.example.domain.model.Beer
+import com.example.itacademyhw.Fragments.ListFragmentDirections
 
 class BeerViewHolder(
     private val binding: BeerItemBinding,
-    val callback: () -> Unit): RecyclerView.ViewHolder(binding.root) {
+    private val callback: () -> Unit): RecyclerView.ViewHolder(binding.root) {
 
-    fun bind(beer: BeerData) {
+    fun bind(beer: Beer) {
         with(binding) {
             itemView.setOnClickListener{
-                it.findNavController().navigate(ListFragmentDirections.toDetails(
+                it.findNavController().navigate(
+                    ListFragmentDirections.toDetails(
                     beer.name, beer.description
                 ))
                 callback()
