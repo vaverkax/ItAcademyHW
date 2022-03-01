@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id("androidx.navigation.safeargs.kotlin")
+    id 'kotlin-kapt'
 }
 
 android {
@@ -49,6 +50,21 @@ dependencies {
 
     def coil_version = "1.4.0"
     implementation "io.coil-kt:coil:$coil_version"
+    def room_version = "2.4.1"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    def coroutinesVersion = "1.5.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+    def coroutinesLifecycleVersion = "2.4.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$coroutinesLifecycleVersion"
+
+    def paging_version = "3.1.0"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+
+    def koinVersion = "3.1.5"
+    implementation "io.insert-koin:koin-android:$koinVersion"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'
