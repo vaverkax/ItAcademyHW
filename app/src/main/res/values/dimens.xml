@@ -19,5 +19,6 @@
     <dimen name="settingsTextMarginStart">15dp</dimen>
     <dimen name="settingsTextMarginTop">90dp</dimen>
     <dimen name="settingsTitleTextSize">30sp</dimen>
+    <dimen name="marginValue">10dp</dimen>
 
 </resources>

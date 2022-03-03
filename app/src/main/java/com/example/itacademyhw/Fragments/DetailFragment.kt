@@ -9,6 +9,7 @@ import androidx.core.view.updatePadding
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.navigation.ui.setupWithNavController
+import coil.load
 import com.example.itacademyhw.Extensions.applyInsetsWithAppBar
 import com.example.itacademyhw.databinding.FragmentDetailBinding
 
@@ -45,6 +46,8 @@ class DetailFragment : Fragment() {
 
             titleText
                 .text = args.beerName
+
+            beerImage.load(args.imageUrl)
 
             appBar.applyInsetsWithAppBar { view, insets ->
                 view.updatePadding(left = insets.left, right = insets.right, top = insets.top)

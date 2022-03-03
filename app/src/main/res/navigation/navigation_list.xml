@@ -30,6 +30,9 @@
         <argument
             android:name="description"
             app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment3"
@@ -44,4 +47,8 @@
         android:id="@+id/modeFragment"
         android:name="com.example.itacademyhw.Fragments.ModeFragment"
         android:label="App Mode" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.itacademyhw.Fragments.MapFragment"
+        android:label="MapFragment" />
 </navigation>

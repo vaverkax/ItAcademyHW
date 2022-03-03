@@ -106,6 +106,9 @@ class ListFragment : Fragment() {
                                     )
                                     .show()
                             }
+                            is LoadState.Loading -> {
+                                print(true)
+                            }
                         }
                     }
             }
