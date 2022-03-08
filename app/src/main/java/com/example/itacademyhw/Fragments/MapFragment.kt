@@ -28,6 +28,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
+import org.koin.android.ext.android.inject
 
 class MapFragment : Fragment() {
     private var _binding: FragmentMapBinding? = null
@@ -37,9 +38,7 @@ class MapFragment : Fragment() {
         }
     private var googleMap: GoogleMap? = null
     private var locationListener: LocationSource.OnLocationChangedListener? = null
-    private val locationService by lazy {
-        LocationService(requireContext())
-    }
+    private val locationService: LocationService by inject()
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
 
     private val permissionManager = registerForActivityResult(
