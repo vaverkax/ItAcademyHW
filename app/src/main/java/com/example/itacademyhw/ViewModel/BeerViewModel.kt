@@ -3,14 +3,19 @@ package com.example.itacademyhw.ViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.*
+import com.example.data.db.BeerDatabase
 import com.example.domain.useCases.GetBeersUseCase
-import com.example.itacademyhw.Paging.BeerPagingSource
+import com.example.itacademyhw.Paging.BeerRemoteMediator
 import kotlinx.coroutines.flow.*
 
-class BeerViewModel(private val beersUseCase: GetBeersUseCase) : ViewModel() {
+class BeerViewModel(
+    private val beersUseCase: GetBeersUseCase,
+    private val beerDatabase: BeerDatabase
+    ) : ViewModel() {
 
     private val queryFlow = MutableStateFlow("")
 
+    @ExperimentalPagingApi
     val pagingFlow = queryFlow.debounce(1000).flatMapLatest { query ->
         Pager(
             config = PagingConfig(
@@ -19,7 +24,8 @@ class BeerViewModel(private val beersUseCase: GetBeersUseCase) : ViewModel() {
                 prefetchDistance = 15,
                 enablePlaceholders = false
             ),
-            pagingSourceFactory = { BeerPagingSource(beersUseCase, query) }
+            remoteMediator = BeerRemoteMediator(beersUseCase, beerDatabase, query),
+            pagingSourceFactory = { beerDatabase.beerDao().pagingSource() }
         ).flow
     }
         .cachedIn(viewModelScope)

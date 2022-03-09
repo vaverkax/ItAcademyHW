@@ -34,7 +34,6 @@ class ListFragment : Fragment() {
     private val adapterPaging by lazy(LazyThreadSafetyMode.NONE) {
         BeerAdapter(requireContext())
     }
-    private lateinit var linearLayoutManager: LinearLayoutManager
     private val viewModel by viewModel<BeerViewModel>()
 
     private val searchQueryFlow: Flow<String>
@@ -72,6 +71,7 @@ class ListFragment : Fragment() {
             .root
     }
 
+    @OptIn(ExperimentalPagingApi::class)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
@@ -105,6 +105,9 @@ class ListFragment : Fragment() {
                                         Toast.LENGTH_SHORT
                                     )
                                     .show()
+                            }
+                            is LoadState.Loading -> {
+                                print(true)
                             }
                         }
                     }

@@ -16,7 +16,7 @@ class BeerViewHolder(
             itemView.setOnClickListener{
                 it.findNavController().navigate(
                     ListFragmentDirections.toDetails(
-                    beer.name, beer.description
+                    beer.name, beer.description, beer.imageUrl
                 ))
                 callback()
             }

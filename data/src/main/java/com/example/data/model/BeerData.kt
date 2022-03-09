@@ -10,8 +10,6 @@ data class BeerData(
     val description: String,
     @SerializedName("image_url")
     val imageUrl: String,
-    @SerializedName("food_pairing")
-    val foodPairing: List<String>,
     @SerializedName("brewers_tips")
     val brewTips: String
 )
