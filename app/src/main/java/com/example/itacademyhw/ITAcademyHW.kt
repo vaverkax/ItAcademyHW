@@ -17,7 +17,9 @@ class ITAcademyHW : Application() {
                 viewModelModule,
                 repositoryModule,
                 useCasesModule,
-                sharedPrefsModule
+                sharedPrefsModule,
+                locationModule,
+                databaseModule
             )
         }
     }
