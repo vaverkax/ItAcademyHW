@@ -6,5 +6,4 @@ data class Beer (
     val firstBrewed: String,
     val description: String,
     val imageUrl: String,
-    val foodPairing: List<String>,
     val brewTips: String)

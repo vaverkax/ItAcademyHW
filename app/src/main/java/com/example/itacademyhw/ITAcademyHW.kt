@@ -18,7 +18,8 @@ class ITAcademyHW : Application() {
                 repositoryModule,
                 useCasesModule,
                 sharedPrefsModule,
-                locationModule
+                locationModule,
+                databaseModule
             )
         }
     }
