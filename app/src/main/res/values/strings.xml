@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">ItAcademyHW</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="beerItemPlaceHolder">Some text</string>
+    <string name="detailFragmentTitlePlaceHolder">Title</string>
+    <string name="detailFragmentPlaceHolder">placeholder</string>
+    <string name="modeFragmentTitle">App Mode</string>
+    <string name="listFragmentTitle">Beers list</string>
+    <string name="switchTitle">Dark Mode</string>
+    <string name="settingsFragmentTitle">Settings</string>
+    <string name="settingsTextTitle">Dark Mode</string>
+    <string name="bottomNavigationFirstItemTitle">Beer List</string>
+    <string name="bottomNavigationSecondItemTitle">Settings</string>
+    <string name="menuSearchItemTitle">Search</string>
 </resources>

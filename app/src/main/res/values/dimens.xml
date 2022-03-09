@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mainActivityFragmentContainerHW">0dp</dimen>
+    <dimen name="beerItemLayoutMarginEnd">20dp</dimen>
+    <dimen name="beerItemPadding">20dp</dimen>
+    <dimen name="beerItemTextSize">20sp</dimen>
+    <dimen name="containerFragmentContainerHW">0dp</dimen>
+    <dimen name="detailFragmentTitleTextSize">24sp</dimen>
+    <dimen name="detailFragmentDescriptionTextSize">16sp</dimen>
+    <dimen name="detailFragmentSpaceHeight">20dp</dimen>
+    <dimen name="recyclerViewPadding">20dp</dimen>
+    <dimen name="recyclerViewItemsCount">20</dimen>
+    <dimen name="switchLayoutHeight">48dp</dimen>
+    <dimen name="switchMarginTop">40dp</dimen>
+    <dimen name="switchMarginStart">10dp</dimen>
+    <dimen name="switchMarginEnd">10dp</dimen>
+    <dimen name="switchTitleTextSize">30sp</dimen>
+    <dimen name="switchLayoutEditorAbsoluteX">61dp</dimen>
+    <dimen name="settingsTextMarginStart">15dp</dimen>
+    <dimen name="settingsTextMarginTop">90dp</dimen>
+    <dimen name="settingsTitleTextSize">30sp</dimen>
+
+</resources>

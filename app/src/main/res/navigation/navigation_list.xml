@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_list"
+    app:startDestination="@id/list">
+
+    <fragment
+        android:id="@+id/list"
+        android:name="com.example.itacademyhw.Fragments.ListFragment"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/to_details"
+            app:destination="@id/detailFragment"
+            app:popUpTo="@id/list"
+            app:popUpToInclusive="false"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.itacademyhw.Fragments.DetailFragment"
+        tools:layout="@layout/fragment_detail"
+        android:label="{beerName}">
+        <argument
+            android:name="beerName"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment3"
+        android:name="com.example.itacademyhw.Fragments.SettingsFragment"
+        android:label="settings_fragment"
+        tools:layout="@layout/settings_fragment" >
+        <action
+            android:id="@+id/action_settingsFragment3_to_modeFragment"
+            app:destination="@id/modeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modeFragment"
+        android:name="com.example.itacademyhw.Fragments.ModeFragment"
+        android:label="App Mode" />
+</navigation>

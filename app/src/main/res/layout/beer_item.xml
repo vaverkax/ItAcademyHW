@@ -14,14 +14,14 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
-            android:layout_marginEnd="20dp" />
+            android:layout_marginEnd="@dimen/beerItemLayoutMarginEnd" />
 
         <TextView
             android:id="@+id/text_name"
-            android:textSize="20sp"
+            android:textSize="@dimen/beerItemTextSize"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp"
-            tools:text="Some text"  />
+            android:padding="@dimen/beerItemPadding"
+            tools:text="@string/beerItemPlaceHolder"  />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
