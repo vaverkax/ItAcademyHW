@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/containerFragment"
-        android:name="com.example.itacademyhw.Fragments.ContainerFragment"
+        android:name="com.example.itacademyhw.fragments.ContainerFragment"
         android:label="fragment_container"
         tools:layout="@layout/fragment_container" />
 </navigation>

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/list"
-        android:name="com.example.itacademyhw.Fragments.ListFragment"
+        android:name="com.example.itacademyhw.fragments.ListFragment"
         tools:layout="@layout/fragment_list">
         <action
             android:id="@+id/to_details"
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.itacademyhw.Fragments.DetailFragment"
+        android:name="com.example.itacademyhw.fragments.DetailFragment"
         tools:layout="@layout/fragment_detail"
         android:label="{beerName}">
         <argument
@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment3"
-        android:name="com.example.itacademyhw.Fragments.SettingsFragment"
+        android:name="com.example.itacademyhw.fragments.SettingsFragment"
         android:label="settings_fragment"
         tools:layout="@layout/settings_fragment" >
         <action
@@ -45,10 +45,10 @@
     </fragment>
     <fragment
         android:id="@+id/modeFragment"
-        android:name="com.example.itacademyhw.Fragments.ModeFragment"
+        android:name="com.example.itacademyhw.fragments.ModeFragment"
         android:label="App Mode" />
     <fragment
         android:id="@+id/mapFragment"
-        android:name="com.example.itacademyhw.Fragments.MapFragment"
+        android:name="com.example.itacademyhw.fragments.MapFragment"
         android:label="MapFragment" />
 </navigation>

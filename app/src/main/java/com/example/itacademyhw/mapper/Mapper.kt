@@ -1,14 +1,7 @@
-package com.example.data.mapper
+package com.example.itacademyhw.mapper
 
-import com.example.data.model.BeerData
 import com.example.data.model.BeerDataDB
 import com.example.domain.model.Beer
-
-internal fun BeerData.toDomainModel(): Beer {
-    return Beer(
-        id, name, firstBrewed, description, imageUrl, brewTips
-    )
-}
 
 internal fun Beer.toDatabaseModel(): BeerDataDB {
     return BeerDataDB(

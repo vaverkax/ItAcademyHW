@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.WindowCompat
 import com.example.data.model.NightMode
-import com.example.itacademyhw.Managers.SharedPrefersManager
+import com.example.itacademyhw.managers.SharedPrefersManager
 import org.koin.android.ext.android.inject
 
 class MainActivity: AppCompatActivity(R.layout.activity_main) {

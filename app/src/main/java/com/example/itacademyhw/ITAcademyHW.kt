@@ -1,7 +1,7 @@
 package com.example.itacademyhw
 
 import android.app.Application
-import com.example.itacademyhw.DI.*
+import com.example.itacademyhw.di.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -15,10 +15,9 @@ class ITAcademyHW : Application() {
             modules(
                 networkModule,
                 viewModelModule,
-                repositoryModule,
-                useCasesModule,
                 sharedPrefsModule,
                 locationModule,
+                beerRepositoryModule,
                 databaseModule
             )
         }
