@@ -26,7 +26,7 @@ class BeerPagingSource (
             if (query != "") {
                 beerList = beerList
                     .map { list ->
-                        list.filter { it.name.contains(query) }
+                        list.filter { it.name.lowercase().contains(query) }
                 }
             }
             LoadResult.Page(

@@ -5,11 +5,13 @@
     <string name="detailFragmentTitlePlaceHolder">Title</string>
     <string name="detailFragmentPlaceHolder">placeholder</string>
     <string name="modeFragmentTitle">App Mode</string>
-    <string name="listFragmentTitle">Beers list</string>
+    <string name="listFragmentTitle">Beer list</string>
     <string name="switchTitle">Dark Mode</string>
     <string name="settingsFragmentTitle">Settings</string>
     <string name="settingsTextTitle">Dark Mode</string>
     <string name="bottomNavigationFirstItemTitle">Beer List</string>
     <string name="bottomNavigationSecondItemTitle">Settings</string>
     <string name="menuSearchItemTitle">Search</string>
+    <string name="mapTitleBottomNavigation">Map</string>
+    <string name="mapFragmentTitleToolBar">Map</string>
 </resources>
